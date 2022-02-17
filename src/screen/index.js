@@ -9,3 +9,4 @@ export { default as History } from './HistoryScreen/History';
 export { default as EditProfile } from './EditProfile/EditProfile';
 export { default as AppInfo } from './AppInfo/AppInfo';
 export { default as HelpInfo } from './HelpInfo/HelpInfo';
+export { default as SplashScreen } from './SplashScreen/SplashScreen';

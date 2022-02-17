@@ -18,7 +18,7 @@ const LoginScreen = ({ navigation }) => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
-    const {login, googleLogin} = useContext(AuthContext);
+    const { login, googleLogin } = useContext(AuthContext);
     return (
         <View style={styles.BackgroundContainer}>
             <Image
@@ -33,9 +33,9 @@ const LoginScreen = ({ navigation }) => {
                 keyboardType="email-address"
                 autoCapitalize="none"
                 autoCorrect={false}
-                
+
             />
-        
+
             <FormInput
                 labelValue={password}
                 onChangeText={(userPassword) => setPassword(userPassword)}
@@ -43,7 +43,7 @@ const LoginScreen = ({ navigation }) => {
                 iconType="lock"
                 secureTextEntry={true}
             />
- 
+
             <FormButton
                 buttonTitle="Sign In"
                 onPress={() => login(email, password)}
@@ -53,20 +53,12 @@ const LoginScreen = ({ navigation }) => {
             </TouchableOpacity>
 
             <SocialButton
-            buttonTitle="Sign In with Facebook"
-            btnType="facebook"
-            color="#2c599d"
-            backgroundColor="#a5a5a5"
-            onPress={() => fbLogin()}
-          />
-
-          <SocialButton
-            buttonTitle="Sign In with Google"
-            btnType="google"
-            color="#f9872f"
-            backgroundColor="#a5a5a5"
-            onPress={() => googleLogin()}
-          />
+                buttonTitle="Sign In with Google"
+                btnType="google"
+                color="#f9872f"
+                backgroundColor="#a5a5a5"
+                onPress={() => googleLogin()}
+            />
             <TouchableOpacity
                 style={styles.forgotButton}
                 onPress={gotoSignUp}>

@@ -39,9 +39,9 @@ const AuthStack = () => {
   if (isFirstLaunch === null) {
     return null;
   } else if (isFirstLaunch == true) {
-    routeName = navigationStrings.SONBOARD;
+    routeName = navigationStrings.ONBOARD;
   } else {
-    routeName = navigationStrings.SLOGIN;
+    routeName = navigationStrings.LOGIN;
   }
 
   return (

@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { View, Text, TouchableOpacity, Platform, StyleSheet } from 'react-native';
-import * as Animatable from 'react-native-animatable'
 import FormButton from '../../components/FormButton';
 import FormInput from '../../components/FormInput';
 import SocialButton from '../../components/SocialButton';
@@ -67,14 +66,6 @@ const SignUpScreen = ({ navigation }) => {
         </Text>
       </View>
       <View>
-        <SocialButton
-          buttonTitle="Sign Up with Facebook"
-          btnType="facebook"
-          color="#2c599d"
-          backgroundColor="#a5a5a5"
-          onPress={() => { }}
-        />
-
         <SocialButton
           buttonTitle="Sign Up with Google"
           btnType="google"

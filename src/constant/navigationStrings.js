@@ -66,5 +66,6 @@ export default{
 //  navigations
     MENUTAB: "MenuTab",
     PROFILETAB: "ProfileTab",
-    DETAILSTAB: "DetailsTab"
+    DETAILSTAB: "DetailsTab",
+    PROVIDERS: "Providers"
 }
