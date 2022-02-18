@@ -46,26 +46,9 @@ export default{
     TROUTES: "Routes",
 
 
-// Stack
-    SLOGIN : 'SLogin',
-    SONBOARD : 'SOnBoarding',
-    SSIGNUP : 'SSignUp',
-    SHOME : 'SHomeScreen',
-    SPROFILE:"SProfile",
-    SAPPDETAILS:"SAppDetails",
-    STABS:"STabs",
-    STRANS: "STranscription",
-    SHISTORY: "SHISTORY",
-    SEDITPRO: "SEditProfile",
-    SAPPINFO: "SAppInfo",
-    SHELPINFO: "SHelpInfo",
-    SROUTES: "SRoutes",
-
-
-
-//  navigations
+    SPLASH: "SplashScreen",
     MENUTAB: "MenuTab",
     PROFILETAB: "ProfileTab",
     DETAILSTAB: "DetailsTab",
-    PROVIDERS: "Providers"
+    ROUTES: "Routes"
 }

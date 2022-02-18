@@ -1,19 +1,14 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, Image } from 'react-native';
 import navigationStrings from '../../constant/navigationStrings';
-import Providers from '../../navigation/index';
-import LoginScreen from '../LoginScreen/LoginScreen';
+import Routes from '../../navigation/Routes';
 
 
 const SplashScreen = ({ navigation }) => {
 
-    const gotoTrans = () => {
-        navigation.navigate(Providers)
-      }
-
     setTimeout(() => {
-        navigation.navigate(Providers)
-    }, 2000)
+        navigation.replace(navigationStrings.ONBOARD);
+    }, 5000)
 
     return (
         <SafeAreaView
@@ -22,7 +17,7 @@ const SplashScreen = ({ navigation }) => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-                backgroundColor: '#30B2EA'
+                backgroundColor: '#fff'
             }}>
             <StatusBar
                 barStyle="light-content"

@@ -1,6 +1,5 @@
 import {
   PermissionsAndroid,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,

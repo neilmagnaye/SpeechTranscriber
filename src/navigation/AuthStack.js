@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { OnBoarding, Login, SignUp } from '../screen'
+import { OnBoarding, Login, SignUp, SplashScreen } from '../screen'
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import navigationStrings from '../constant/navigationStrings';
@@ -17,7 +17,7 @@ const AuthStack = () => {
   let routeName;
 
   const gotoLog = () => {
-    navigation.navigate(navigationStrings.SLOGIN)
+    navigation.navigate(navigationStrings.LOGIN)
   }
 
   useEffect(() => {
@@ -36,28 +36,34 @@ const AuthStack = () => {
 
   }, []);
 
-  if (isFirstLaunch === null) {
-    return null;
-  } else if (isFirstLaunch == true) {
-    routeName = navigationStrings.ONBOARD;
-  } else {
-    routeName = navigationStrings.LOGIN;
-  }
+  // if (isFirstLaunch === null) {
+  //   return null;
+  // } else if (isFirstLaunch == true) {
+  //   routeName = navigationStrings.ONBOARD;
+  // } else {
+  //   routeName = navigationStrings.SPLASH;
+  // }
 
   return (
     <Stack.Navigator initialRouteName={routeName}>
-      <Stack.Screen
-        name={navigationStrings.SONBOARD}
-        component={OnBoarding}
+            <Stack.Screen
+        name={navigationStrings.SPLASH}
+        component={SplashScreen}
         options={{ header: () => null }}
       />
       <Stack.Screen
-        name={navigationStrings.SLOGIN}
+        name={navigationStrings.ONBOARD}
+        component={OnBoarding}
+        options={{ header: () => null }}
+      />
+
+      <Stack.Screen
+        name={navigationStrings.LOGIN}
         component={Login}
         options={{ header: () => null }}
       />
       <Stack.Screen
-        name={navigationStrings.SSIGNUP}
+        name={navigationStrings.SIGNUP}
         component={SignUp}
         options={({ navigation }) => ({
           title: '',
@@ -73,7 +79,7 @@ const AuthStack = () => {
                 size={25}
                 backgroundColor="#f9fafd"
                 color="#333"
-                onPress={() => navigation.navigate(navigationStrings.SLOGIN)}
+                onPress={() => navigation.navigate(navigationStrings.LOGIN)}
               />
             </View>
           ),

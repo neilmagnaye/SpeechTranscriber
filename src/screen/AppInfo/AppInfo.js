@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
-import HeaderComp from '../../components/HeaderComp';
-import { SafeAreaView, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import styles from '../AppInfo/styles';
 import FormButton from '../../components/FormButton';
 import { AuthContext } from '../../navigation/AuthProvider';

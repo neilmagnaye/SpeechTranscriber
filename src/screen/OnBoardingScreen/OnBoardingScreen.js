@@ -9,7 +9,7 @@ import navigationStrings from '../../constant/navigationStrings';
 const OnBoardingScreen = ({ navigation }) => {
 
   const gotoLogin = () => {
-    navigation.replace(navigationStrings.SLOGIN)
+    navigation.replace(navigationStrings.LOGIN)
   }
 
   const Skip = ({...props}) => {

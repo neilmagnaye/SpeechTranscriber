@@ -1,8 +1,7 @@
 import React from "react";
 import  'react-native-gesture-handler';
 import Providers from "./src/navigation";
-
-import SplashScreen from "./src/screen/SplashScreen/SplashScreen";
+import Routes from "./src/navigation/Routes";
 
 const App = () => {
   return <Providers />;

@@ -1,7 +1,6 @@
-import { SafeAreaView, Text, View, TouchableOpacity } from 'react-native';
+import { Text, View } from 'react-native';
 import styles from '../ProfileScreen/styles';
 import React, { useContext } from 'react';
-import navigationStrings from '../../constant/navigationStrings';
 import { AuthContext } from '../../navigation/AuthProvider';
 
 

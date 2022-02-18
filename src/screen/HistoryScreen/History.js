@@ -1,7 +1,5 @@
 
 import React from 'react';
-import HeaderComp from '../../components/HeaderComp';
-import { SafeAreaView, Text, View } from 'react-native';
 import styles from '../HistoryScreen/styles';
 
 const History = ({ navigation }) => {

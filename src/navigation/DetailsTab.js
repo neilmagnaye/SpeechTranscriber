@@ -5,7 +5,7 @@ import navigationStrings from "../constant/navigationStrings";
 import imagePath from "../constant/imagePath"
 import { Image } from "react-native";
 
-import { AppDetails, AppInfo, EditProfile, HelpInfo, Profile } from "../screen";
+import { AppDetails, AppInfo,  HelpInfo } from "../screen";
 
 
 const Tab = createBottomTabNavigator();
